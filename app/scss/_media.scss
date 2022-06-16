@@ -1,0 +1,550 @@
+@media (max-width: 1440px){
+  .main-projects{
+    &__title{
+      max-width: 467px;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .main-projects{
+    &__inner{
+      margin-right: 56px;
+    }
+  }
+  .header-projects .header__logo-box{
+      max-width: 347px;
+  }
+  .projects{
+    &__buttons-box{
+      max-width: 347px;
+    }
+    &__items{
+      margin-right: 40px;
+    }
+  }
+  // .product{
+  //   &__content{
+  //     margin-right: 105px;
+  //   }
+  // }
+  .header-product .header__logo-box{
+    max-width: 377px;
+  }
+  .product{
+    &__wrapper{
+      justify-content: space-between;
+    }
+    &__content{
+      max-width: 377px;
+    }
+    &__layout-btns{
+      display: flex;
+      flex-direction: column;
+      margin-left: 30px;
+    }
+    &__inner-box{
+      margin-left: auto;
+    }
+    &__inner{
+      max-width: 760px;
+      margin-right: 0;
+    }
+    .swiper-pagination{
+      right: calc(0px - 45px);
+    }
+    &__inner-box.product__inner-box--grid{
+
+    }
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .header{
+    &__logo-box{
+      max-width: 340px;
+    }
+    &__logo-text{
+      display: none;
+    }
+  }
+  .main-projects{
+    &__title{
+      max-width: 330px;
+    }
+  }
+  .footer{
+    &__item:nth-child(1){
+      max-width: 340px;
+    }
+  }
+  .contacts{
+    &__inner{
+      flex-direction: column;
+    }
+    &__links{
+      margin-right: 0;
+      margin-bottom: 42px;
+    }
+    &__link-item span{
+      width: 100px;
+      margin-right: 18px;
+    }
+    &__link-item a{
+      align-self: flex-end;
+    }
+  }
+  .about{
+    &__item{
+      flex-wrap: wrap;
+    }
+    &__text{
+      max-width: 100%;
+      margin-top: 40px;
+    }
+    &__text p{
+      max-width: 428px;
+    }
+  }
+  .services{
+    &__inner{
+      padding-bottom: 95px;
+    }
+    &__top{
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+    &__top-title{
+      margin-bottom: 40px;
+    }
+    &__top-text{
+      max-width: 350px;
+    }
+    &__stage{
+      flex-wrap: wrap;
+    }
+    &__stage:not(:last-child){
+      margin-bottom: 50px;
+    }
+    &__stage-text,
+    &__stage-image{
+      max-width: 100%;
+    }
+    &__stage-text{
+      margin: 40px 0 12px;
+    }
+    &__stage-text p{
+      max-width: 430px;
+    }
+  }
+  .team{
+    padding: 12px 0 170px;
+    &__inner{
+      flex-direction: column;
+    }
+    &__title,
+    &__text{
+      margin-bottom: 55px;
+    }
+    &__items{
+      // grid-template-columns: repeat(2, 165px);
+      // grid-gap: 45px 15px;
+    }
+    &__item{
+      max-width: 165px;
+    }
+    &__item:last-child img{
+      height: auto;
+    }
+    &__image img{
+      width: 165px;
+    }
+  }
+  .projects{
+    &__wrapper{
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__buttons{
+      position: static;
+    }
+    &__inner{
+      order: 1;
+      margin-top: 50px;
+      width: 100%;
+    }
+    &__items{
+      margin-right: 30px;
+    }
+    &__items.projects__items--list{
+      margin-right: 30px;
+    }
+    &__layout-btns{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .product{
+    &__wrapper{
+      flex-direction: column;
+    }
+    &__inner-box{
+      margin-left: 0;
+    }
+    &__inner{
+      display: none;
+    }
+    &__grid-inner{
+      display: block;
+    }
+    &__layout-btns{
+      display: none;
+    }
+    &__content{
+      margin-bottom: 50px;
+    }
+    &__place{
+      margin-bottom: 40px;
+    }
+    &__text p{
+      max-width: 100%;
+    }
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .header{
+    &__logo-box a svg{
+      width: 90px;
+    }
+    &__burger{
+      display: flex;
+      transition: margin-right 500ms ease;
+    }
+    &__burger span{
+      transition: transform 500ms ease, opacity 500ms ease;
+    }
+    &__burger.header__burger--active{
+      margin-right: -10px;
+      transition: margin-right 500ms ease;
+      span{
+        transition: transform 500ms ease, opacity 500ms ease;
+      }
+      span:nth-child(1){
+        transform: rotate(45deg) translateY(10px);
+      }
+      span:nth-child(3){
+        transform: rotate(-45deg) translateY(-10px);
+      }
+      span:nth-child(2){
+        opacity: 0;
+      }
+    }
+    &__color button{
+      width: 17px;
+      height: 17px;
+    }
+    &__nav{
+      transform: translateY(-300%);
+      position: absolute;
+      top: 80px;
+      padding-top: 60px;
+      margin-top: 0;
+      left: 0;
+      right: 0;
+      z-index: 101;
+      height: calc(100vh - 80px);
+      background-color: var(--ui-light);
+      opacity: 0;
+      transition: transform 500ms ease-in-out, opacity 800ms ease;
+      display: flex;
+      flex-direction: column;
+    }
+    &__nav--active{
+      transform: translateY(0%);
+      opacity: 1;
+      transition: transform 100ms ease-in-out, opacity 800ms ease;
+    }
+    &__nav ul{
+      padding: 0 10px;
+      flex-direction: column;
+    }
+    &__nav ul li{
+      width: 100%;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+      font-size: 15px;
+      border-bottom: 1px solid var(--ui-dark);
+    }
+    &__nav ul li:first-child{
+      padding-top: 16px;
+      border-top: 1px solid var(--ui-dark);
+    }
+    &__nav-bottom{
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
+      margin-top: auto;
+      margin-bottom: 8px;
+    }
+    .header__list-dropdown a{
+      display: none;
+    }
+    .header__list-dropdown span{
+      display: flex;
+    }
+    &__logo-text--adaptive{
+      display: block;
+      max-width: 200px;
+      margin: 0 0 40px 0;
+    }
+    &__logo-text--adaptive p{
+      font-size: 15px;
+    }
+    .header__list-item--about{
+      padding-right: 0;
+    }
+    .header__list-item--about ul{
+      position: static;
+    }
+    .header__list-item--about ul li{
+      font-size: 15px;
+      color: var(--ui-dark);
+    }
+  }
+  .main__container{
+    padding: 0;
+  }
+  .main-projects{
+    padding-bottom: 160px;
+    &__inner{
+      margin-right: 0;
+    }
+    &__item{
+      flex-direction: column;
+    }
+    &__item:not(:last-child){
+      margin-bottom: 50px;
+    }
+    &__title a{
+      font-size: 15px;
+    }
+    &__image img{
+      width: 100%;
+      height: auto;
+    }
+    &__more{
+      display: none;
+    }
+    &__all{
+      display: flex;
+      margin-top: 35px;
+    }
+    &__all a{
+      font-size: 15px;
+    }
+    &__all svg{
+      margin-right: 8px;
+    }
+    &__all a svg path{
+      fill: var(--ui-dark);
+      transition: fill 500ms ease;
+    }
+    &__all a:hover svg path{
+      fill: var(--ui-grey);
+    }
+  }
+  .footer{
+    &__inner{
+      justify-content: space-between;
+    }
+    &__item:nth-child(1){
+      max-width: 100%;
+      width: auto;
+    }
+    &__item:nth-child(3){
+      margin: 0;
+    }
+    &__item:nth-child(4){
+      margin-right: 32px;
+    }
+    &__item span,
+    &__item a{
+      font-size: 15px;
+    }
+  }
+  .contacts{
+    &__link-item span,
+    &__link-item a,
+    &__form input,
+    &__form input::placeholder,
+    &__form button{
+      font-size: 15px;
+    }
+  }
+  .about{
+    &__inner{
+      padding-bottom: 90px;
+    }
+    &__item-title h4,
+    &__descr ul li,
+    &__descr p,
+    &__text p{
+      font-size: 15px;
+    }
+  }
+  .services{
+    &__top-title h3,
+    &__top-text p,
+    &__stage-title p,
+    &__stage-text p{
+      font-size: 15px;
+    }
+  }
+  .team{
+    &__title h3,
+    &__text p,
+    &__position h5,
+    &__position h5 span{
+      font-size: 15px;
+    }
+    &__items{
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 45px 15px;
+    }
+  }
+  .projects{
+    &__buttons button,
+    &__item h4{
+      font-size: 15px;
+    }
+    &__items{
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 50px 15px;
+    }
+    &__item{
+      max-width: 150px;
+      width: 100%;
+    }
+    &__item h4{
+      opacity: 1;
+    }
+    &__item-title{
+      min-height: 40px;
+    }
+    &__item img{
+      width: 150px;
+      height: 152px;
+    }
+    &__item--big img{
+      height: 209px;
+    }
+    &__item--small img{
+      height: 114px;
+    }
+    &__buttons button span:first-child{
+      max-width: 150px;
+      margin-right: 10px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .team{
+    &__items{
+      grid-template-columns: repeat(2, 165px);
+    }
+  }
+  .projects{
+    &__items{
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  .product{
+    &__grid-items{
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 50px 15px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .about{
+    &__item-title{
+      max-width: 108px;
+      margin-right: 15px;
+    }
+    &__descr{
+      max-width: 210px;
+      margin-right: 0;
+    }
+    &__text p span{
+      display: inline-block;
+    }
+  }
+  .services{
+    &__stage:nth-child(2) .services__stage-image,
+    &__stage:nth-child(2) .services__stage-image img,
+    &__stage:nth-child(4) .services__stage-image,
+    &__stage:nth-child(4) .services__stage-image img{
+      width: 100%;
+    }
+    &__stage-image img{
+      height: auto;
+    }
+    &__stage-num{
+      max-width: 108px;
+      margin-right: 15px;
+    }
+    &__stage-title{
+      max-width: 225px;
+      margin-right: 0;
+    }
+  }
+  .team{
+    &__items{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .projects{
+    &__items{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__items.projects__items--list{
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 50px;
+      .projects__item{
+        max-width: 100%;
+      }
+      .projects__item img{
+        width: 100%;
+        height: auto;
+      }
+      .projects__item-title{
+        min-height: auto;
+      }
+    }
+    &__buttons-box{
+      max-width: 220px;
+    }
+  }
+  .product{
+    padding-bottom: 160px;
+    &__grid-items{
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 15px;
+    }
+    &__grid-item a:nth-of-type(2){
+      display: block;
+    }
+    &__grid-item a:nth-of-type(1){
+      display: none;
+    }
+    &__grid-item img{ 
+      width: 100%;
+      height: 342px;
+    }
+  }
+}

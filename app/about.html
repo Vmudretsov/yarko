@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YARKO</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header header-about">
+    <div class="header__inner container">
+      <div class="header__logo-box">
+        <a class="header__logo" href="index.html">
+          <svg width="149" height="65" viewBox="0 0 149 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M133.281 23.7732C135.068 23.7732 136.815 24.3031 138.3 25.2957C139.786 26.2884 140.944 27.6993 141.627 29.35C142.311 31.0007 142.49 32.8172 142.142 34.5696C141.793 36.322 140.933 37.9317 139.669 39.1951C138.406 40.4585 136.796 41.3189 135.044 41.6674C133.291 42.016 131.475 41.8371 129.824 41.1534C128.173 40.4696 126.763 39.3117 125.77 37.8261C124.777 36.3405 124.247 34.5939 124.247 32.8071C124.25 30.412 125.203 28.1156 126.896 26.422C128.59 24.7284 130.886 23.7758 133.281 23.7732ZM133.281 17.0889C130.172 17.0889 127.134 18.0107 124.549 19.7379C121.964 21.465 119.949 23.9199 118.759 26.792C117.57 29.6642 117.259 32.8246 117.865 35.8736C118.472 38.9227 119.969 41.7234 122.167 43.9216C124.365 46.1199 127.166 47.6169 130.215 48.2234C133.264 48.8299 136.424 48.5186 139.296 47.3289C142.169 46.1392 144.623 44.1246 146.351 41.5397C148.078 38.9549 149 35.9159 149 32.8071C149 28.6384 147.344 24.6404 144.396 21.6926C141.448 18.7449 137.45 17.0889 133.281 17.0889Z"
+              fill="#151515" />
+            <path
+              d="M56.1384 18.2356V21.8006C53.6818 19.0502 50.3021 17.2789 46.4241 17.3412C38.7909 17.3412 32.442 24.3849 32.3525 32.9221C32.442 41.4592 38.7909 48.1963 46.4241 48.1963C50.3021 48.2586 53.6818 46.4873 56.1384 43.7369V47.329H62.9825V18.2356H56.1384ZM47.7961 41.8745C42.7361 41.8745 39.0577 37.5828 38.9587 32.6426C39.0577 27.7024 42.7361 23.6981 47.7961 23.6981C52.8561 23.6981 56.814 27.8509 56.913 32.7847C56.814 37.7233 52.8561 41.8697 47.7961 41.8697V41.8745Z"
+              fill="#151515" />
+            <path
+              d="M110.472 47.4531H118.63L104.944 30.588L115.993 18.251H107.94L98.0087 29.3406V0.63208H91.3228V47.37H98.0087V38.3329L100.655 35.3765L110.472 47.4531Z"
+              fill="#151515" />
+            <path
+              d="M25.9836 18.2532L16.699 36.0127L7.45584 18.333H0L12.971 43.1443L1.69625 64.71H9.0291L33.3165 18.2532H25.9836Z"
+              fill="#151515" />
+            <path
+              d="M85.5407 17.3411C81.6004 17.2789 78.1775 19.1061 75.7114 21.93V18.2595H68.9424V47.3737H75.7114V31.3568C76.1251 23.3707 84.6127 23.7157 86.8424 24.0958V17.4114C86.4101 17.3646 85.9756 17.3412 85.5407 17.3411Z"
+              fill="#151515" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__list-item">
+            <a class="header__list-link" href="projects.html">
+              Projects
+            </a>
+          </li>
+          <li class="header__list-item header__list-item--about">
+            <a class="header__list-link" href="about.html">
+              About
+            </a>
+            <ul>
+              <li>
+                <a href="#services">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="#team">
+                  Team
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__list-item">
+            <a class="header__list-link" href="contacts.html">
+              Contacts
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__color">
+        <button></button>
+      </div> -->
+
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__list-item header__list-dropdown">
+            <a class="header__list-link" href="projects.html">
+              Projects
+            </a>
+            <span class="header__list-span">Projects <span>(33)</span></span>
+            <ul>
+              <li>
+                <a href="projects.html">Все <span>(33)</span></a>
+              </li>
+              <li>
+                <a href="#">Музеи и галереи<span>(6)</span></a>
+              </li>
+              <li>
+                <a href="#">Рестораны и кафе <span>(11)</span></a>
+              </li>
+              <li>
+                <a href="#">Офисы <span>(4)</span></a>
+              </li>
+              <li>
+                <a href="#">Магазины <span>(12)</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__list-item header__list-item--about header__list-dropdown">
+            <a class="header__list-link" href="about.html">
+              About
+            </a>
+            <span class="header__list-span">About</span>
+            <ul>
+              <li>
+                <a href="#services">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="#team">
+                  Team
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__list-item">
+            <a class="header__list-link" href="contacts.html">
+              Contacts
+            </a>
+          </li>
+        </ul>
+        <div class="header__nav-bottom">
+          <div class="footer__item">
+            <span>2022</span>
+          </div>
+          <div class="footer__item">
+            <a href="mailto:info@yarko-yarko.com">
+              Mail
+            </a>
+          </div>
+          <div class="footer__item">
+            <a href="#">
+              Telegram
+            </a>
+          </div>
+          <div class="footer__item">
+            <a href="tel:905012980780">
+              Mobile
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header__color">
+        <button></button>
+      </div>
+
+      <div class="header__burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="about">
+      <div class="about__container container">
+
+        <div class="about__inner">
+
+          <div class="about__item">
+            <div class="about__item-title">
+              <h4>Направления работ</h4>
+            </div>
+            <div class="about__descr">
+              <ul>
+                <li>Музеи/выставки</li>
+                <li>Общественные пространства</li>
+                <li>HORECA</li>
+                <li>Частные интерьеры</li>
+                <li>Ландшафтное освещение</li>
+                <li>Фасадное освещение</li>
+                <li>Парковое освещение</li>
+                <li>Свето-звуковые инсталляции</li>
+                <li>Авторские световые приборы</li>
+              </ul>
+            </div>
+            <div class="about__text">
+              <p>
+                В основе работ освещения лежит принципы заботы об окружающей среде и внутреннем мире человека. Создание
+                чувственного
+                и комфортного пространства, безопасного для окружающей среды и призванного улучшить качество жизни
+                людей; пространство
+                которое способствует взаимодействию с предметами искусства, раскрывает лучшее в интерьере, в окружающей
+                среде и в людях.
+              </p>
+            </div>
+          </div>
+          <div class="about__item">
+            <div class="about__item-title">
+              <h4>Что мы делаем</h4>
+            </div>
+            <div class="about__descr">
+              <p>
+                Ведение/сопровождение/контроль/участие в проекта по всем стадиям жизни его рождения и становления. И
+                имеем все
+                профессиональные возможности/экспертизу для этого внутри компании.
+              </p>
+            </div>
+            <div class="about__text">
+              <p>
+                <span>Мы создаём атмосферу, среду</span> и ощущения окружающего пространства.
+              </p>
+            </div>
+          </div>
+          <div class="about__item">
+            <div class="about__item-title">
+              <h4>Создан</h4>
+            </div>
+            <div class="about__descr about__year">
+              <p>
+                2016
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="services__container container">
+
+        <div class="services__inner">
+          <div class="services__top">
+            <div class="services__top-title">
+              <h3>Services</h3>
+            </div>
+            <div class="services__top-text">
+              <p>
+                Базовые этапы или стадии. В разных проектах могут быть использованы все эти этапы или несколько из них.
+              </p>
+            </div>
+          </div>
+
+          <div class="services__stage-box">
+
+            <div class="services__stage">
+              <div class="services__stage-num">
+                <span>1 этап</span>
+              </div>
+              <div class="services__stage-title">
+                <p>
+                  Концепция/скетчбук
+
+                </p>
+              </div>
+              <div class="services__stage-text">
+                <p>
+                  Перед началом работы мы полностью погружаемся в объект с которым предстоит работать, изучаем его
+                  особенности, задачи,
+                  историю, особенности взаимодействия с окр миром и с людьми. Далее на основе материалов исследования
+                  рождается идея,
+                  концепция. Форма подачи материала зависит от задачи и клиента. Это может быть визуализация и мудборды,
+                  скетчи, световые
+                  схемы - любые формы, которые позволяют донести суть идеи и базовые инструменты, необходимые для ее
+                  реализации
+                </p>
+              </div>
+              <a class="services__stage-image" data-fancybox="stage-1" href="images/about/1.jpg">
+                <img src="images/about/1.jpg" alt="stage image">
+              </a>
+            </div>
+
+            <div class="services__stage">
+              <div class="services__stage-num">
+                <span>2 этап</span>
+              </div>
+              <div class="services__stage-title">
+                <p>
+                  Мокап
+
+                </p>
+              </div>
+              <div class="services__stage-text">
+                <p>
+                  На этапе моделирования мы проверяемся жизнеспособность идеи и возможность ее физической реализации.
+                  Совместно с
+                  архитекторами подбираем формы и материалы с поверхностей, которые наилучшим образом взаимодействуют со
+                  светом.
+                  Создаём/разрабатываем необходимые эффекты, которые раскрывают идею концепции освещения.
+                </p>
+              </div>
+              <a class="services__stage-image" data-fancybox="stage-2" href="images/about/2.jpg">
+                <img src="images/about/2.jpg" alt="stage image">
+              </a>
+            </div>
+
+            <div class="services__stage">
+              <div class="services__stage-num">
+                <span>3 этап</span>
+              </div>
+              <div class="services__stage-title">
+                <p>
+                  Документация. Эскизная и/или рабочая.
+
+                </p>
+              </div>
+              <div class="services__stage-text">
+                <p>
+                  Проверяем технические детали в архитектурной модели, проводим необходимые светотехнические расчеты
+                  искусственного
+                  освещения, расчеты инсоляции и анализ естественного освещения. Переводим материал в чертежи, понятные
+                  специалистам
+                  смежных профессий для дальнейшей реализации.Готовим полный комплект всех инженерных чертей - ЭО, ЭОМ,
+                  АСУО
+                  (электрические, светотехнические, системы управления)
+                </p>
+              </div>
+              <a class="services__stage-image" data-fancybox="stage-3" href="images/about/3.jpg">
+                <img src="images/about/3.jpg" alt="stage image">
+              </a>
+            </div>
+
+            <div class="services__stage">
+              <div class="services__stage-num">
+                <span>4 этап</span>
+              </div>
+              <div class="services__stage-title">
+                <p>
+                  Сопровождение строительных работ / шеф монтаж
+                </p>
+              </div>
+              <div class="services__stage-text">
+                <p>
+                  Этап строительства — это динамичный процесс, на этапе которого вноситься коррективы. Поэтому мы
+                  сопровождаем этот
+                  процесс и вовремя реагируем на изменения должным образом. Что позволяет нам реализовать заложенную
+                  идею на этапе
+                  концепции в том образе, который мы закладывали на этапе концепции.
+                </p>
+              </div>
+              <a class="services__stage-image" data-fancybox="stage-4" href="images/about/4.jpg">
+                <img src="images/about/4.jpg" alt="stage image">
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="team" id="team">
+      <div class="team__container container">
+
+        <div class="team__inner">
+
+          <div class="team__title">
+            <h3>Team</h3>
+          </div>
+          <div class="team__box">
+            <div class="team__text">
+              <p>
+                Небольшой текст о команде что есть разные специалисты во всех направлениях. И имеем все профессиональные
+                возможности/
+                экспертизу для этого внутри компании.
+              </p>
+            </div>
+            <div class="team__items">
+
+              <div class="team__item">
+                <div class="team__position">
+                  <h5>
+                    <span>Имя</span>Должность
+                  </h5>
+                </div>
+                <a class="team__image" data-fancybox="team-gallery" href="images/about/team/1.jpg">
+                  <img src="images/about/team/1.jpg" alt="team image">
+                </a>
+              </div>
+
+              <div class="team__item">
+                <div class="team__position">
+                  <h5>
+                    <span>Имя</span>Должность
+                  </h5>
+                </div>
+                <a class="team__image" data-fancybox="team-gallery" href="images/about/team/2.jpg">
+                  <img src="images/about/team/2.jpg" alt="team image">
+                </a>
+              </div>
+
+              <div class="team__item">
+                <div class="team__position">
+                  <h5>
+                    <span>Имя</span>Должность
+                  </h5>
+                </div>
+                <a class="team__image" data-fancybox="team-gallery" href="images/about/team/3.jpg">
+                  <img src="images/about/team/3.jpg" alt="team image">
+                </a>
+              </div>
+
+              <div class="team__item">
+                <div class="team__position">
+                  <h5>
+                    <span>Имя</span>Должность
+                  </h5>
+                </div>
+                <a class="team__image" data-fancybox="team-gallery" href="images/about/team/4.jpg">
+                  <img src="images/about/team/4.jpg" alt="team image">
+                </a>
+              </div>
+
+              <div class="team__item">
+                <div class="team__position">
+                  <h5>
+                    <span>Имя</span>Должность
+                  </h5>
+                </div>
+                <a class="team__image" data-fancybox="team-gallery" href="images/about/team/3.jpg">
+                  <img src="images/about/team/3.jpg" alt="team image">
+                </a>
+              </div>
+
+              <div class="team__item">
+                <div class="team__position">
+                  <h5>
+                    <span>Имя</span>Должность
+                  </h5>
+                </div>
+                <a class="team__image" data-fancybox="team-gallery" href="images/about/team/2.jpg">
+                  <img src="images/about/team/2.jpg" alt="team image">
+                </a>
+              </div>
+
+              <div class="team__item">
+                <div class="team__position">
+                  <h5>
+                    <span>Имя</span>Должность
+                  </h5>
+                </div>
+                <a class="team__image" data-fancybox="team-gallery" href="images/about/team/1.jpg">
+                  <img src="images/about/team/4.jpg" alt="team image">
+                </a>
+              </div>
+
+              <div class="team__item">
+                <div class="team__position">
+                  <h5>
+                    <span>Имя</span>Должность
+                  </h5>
+                </div>
+                <a class="team__image" data-fancybox="team-gallery" href="images/about/team/1.jpg">
+                  <img src="images/about/team/3.jpg" alt="team image">
+                </a>
+              </div>
+
+              <div class="team__item">
+                <div class="team__position">
+                  <h5>
+                    <span>Имя</span>Должность
+                  </h5>
+                </div>
+                <a class="team__image" data-fancybox="team-gallery" href="images/about/team/1.jpg">
+                  <img src="images/about/team/2.jpg" alt="team image">
+                </a>
+              </div>
+
+              <div class="team__item">
+                <div class="team__position">
+                  <h5>
+                    <span>Имя</span>Должность
+                  </h5>
+                </div>
+                <a class="team__image" data-fancybox="team-gallery" href="images/about/team/1.jpg">
+                  <img src="images/about/team/1.jpg" alt="team image">
+                </a>
+              </div>
+
+              <div class="team__item">
+                <div class="team__position">
+                  <h5>
+                    <span>Имя</span>Должность
+                  </h5>
+                </div>
+                <a class="team__image" data-fancybox="team-gallery" href="images/about/team/1.jpg">
+                  <img src="images/about/team/1.jpg" alt="team image">
+                </a>
+              </div>
+
+              <div class="team__item">
+                <div class="team__position">
+                  <h5>
+                    <span>Имя</span>Должность
+                  </h5>
+                </div>
+                <a class="team__image" data-fancybox="team-gallery" href="images/about/team/1.jpg">
+                  <img src="images/about/team/2.jpg" alt="team image">
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner container">
+      <div class="footer__item">
+        <span>2022</span>
+      </div>
+      <div class="footer__item">
+        <a href="mailto:info@yarko-yarko.com">
+          Mail
+        </a>
+      </div>
+      <div class="footer__item">
+        <a href="#">
+          Telegram
+        </a>
+      </div>
+      <div class="footer__item">
+        <a href="tel:905012980780">
+          Mobile
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/main.min.js"> </script>
+</body>
+
+</html>
