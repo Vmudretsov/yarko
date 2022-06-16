@@ -1,9 +1,40 @@
+
+
 $grey: #8c8c8c;
 $text: #151515;
+$light: #fff;
+
+:root {
+  --ui-dark: #151515;
+  --ui-light: #fff;
+  --ui-grey: #8c8c8c;
+  --ui-black: #000;
+}
+
+[data-theme="light"] {
+  --ui-dark: #151515;
+  --ui-light: #fff;
+  --ui-grey: #8c8c8c;
+  --ui-black: #000;
+}
+
+[data-theme="dark"] {
+  --ui-dark: #fff;
+  --ui-light: #151515;
+  --ui-grey: #9a9a9a;
+  --ui-black: #fff;
+}
 
 %unica-400{
   font-family: 'NeueHaasUnica-Regular', sans-serif;
   font-weight: 400;
+}
+
+@function max($numbers...) {
+ @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+ @return m#{i}n(#{$numbers});
 }
 
 // %radio-hidden{
